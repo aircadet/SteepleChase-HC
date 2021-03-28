@@ -85,9 +85,11 @@ public class PlayerController : MonoBehaviour
             // YAKLAŞMA KONTROL VE BULMACALARI GÖSTERME İŞLEMLERİ //
 
             //RaycastHitControl(_stopDistance);
-
-
         }
+
+        // LEVEL SLIDER ISLEMLERI //
+
+        
     }
 
     void RaycastHitControl(float _distance) 

@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
     int _obsNumber, _groundNumber, _currentObs, _currentGround;
     Vector3 _startPos, _startRot;
 
+    public static int _totalDistance;
+
     private void Awake()
     {
         // Ground material renk değişim işlemleri //
@@ -26,6 +28,7 @@ public class LevelManager : MonoBehaviour
 
         _obsNumber = ((_level  + 1) * 2) - 2;
         _groundNumber = (_level +2) *2 ;
+        _totalDistance = _groundNumber * 10;
 
         // Ground Yerleşim İşlemleri //
 

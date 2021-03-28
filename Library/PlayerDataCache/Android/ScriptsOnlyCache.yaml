@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - GameManager
     - LevelManager
     - PlayerController
+    - UIManager
     DOTween.dll:
     - DG.Tweening.Core.DOTweenSettings
     Unity.Rider.Editor.dll:
@@ -16,10 +17,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -28,8 +27,11 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene1.unity:
@@ -78,29 +80,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11390}
     - Class: 114
-      Script: {instanceID: 11450}
+      Script: {instanceID: 11436}
     - Class: 114
-      Script: {instanceID: 11666}
+      Script: {instanceID: 11452}
     - Class: 114
-      Script: {instanceID: 11706}
+      Script: {instanceID: 11498}
     - Class: 114
-      Script: {instanceID: 11922}
+      Script: {instanceID: 11668}
     - Class: 114
-      Script: {instanceID: 12130}
+      Script: {instanceID: 11708}
     - Class: 114
-      Script: {instanceID: 12270}
+      Script: {instanceID: 11924}
     - Class: 114
-      Script: {instanceID: 12688}
+      Script: {instanceID: 11952}
     - Class: 114
-      Script: {instanceID: 12900}
+      Script: {instanceID: 12134}
     - Class: 114
-      Script: {instanceID: 12960}
+      Script: {instanceID: 12274}
     - Class: 114
-      Script: {instanceID: 13110}
+      Script: {instanceID: 12376}
     - Class: 114
-      Script: {instanceID: 13296}
+      Script: {instanceID: 12692}
     - Class: 114
-      Script: {instanceID: 21000}
+      Script: {instanceID: 12904}
+    - Class: 114
+      Script: {instanceID: 12964}
+    - Class: 114
+      Script: {instanceID: 13114}
+    - Class: 114
+      Script: {instanceID: 13300}
+    - Class: 114
+      Script: {instanceID: 13332}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 121
@@ -114,6 +124,12 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -188,6 +204,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 164fdd71d1dc16f30c5c52767f3ba60d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIManager
   - hash:
       serializedVersion: 2
       Hash: aeb62f729c52c814dec86c47dcac1471
@@ -356,6 +378,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Borodar.FarlandSkies.Core.Demo
     className: ColorPicker
+  - hash:
+      serializedVersion: 2
+      Hash: 5ab69104becf4eaca76e8b2dc3dab44b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AIPlayerController
   - hash:
       serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
@@ -568,7 +596,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 933a549c4c6a2a516af7ba7eb8e95e1f
+      Hash: 312262682bb7199acbf10f7a6b3dc187
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -692,12 +720,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 5ab69104becf4eaca76e8b2dc3dab44b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AIPlayerController
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene1.unity
